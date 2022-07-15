@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="./css/producto.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="header-section container">
+            <a href="./index.html">
+                <img class="logo" src="./img/logo2.png" alt="">
+            </a>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./img/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> S/.</h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla1-1.webp" alt="">
+                    <p><span>1020</span>S/.</p>
+                </div>
+                <p class="title">Air Jordan 1 Satin Red</p>
+                <a href="" data-id="1" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla1-1-2.jfif" alt="">
+                    <p><span>300</span>S/.</p>
+                </div>
+                <p class="title"> Zapatillas Urbanas Niño Nike Air Max</p>
+                <a href="" class="btn-add-cart" data-id="2">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla2-1.jpg" alt="">
+                    <p><span>290</span>S/.</p>
+                </div>
+                <p class="title"> Nike Air Force 1 low white</p>
+                <a href="" data-id="3" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla2.webp" alt="">
+                    <p><span>290</span>S/.</p>
+                </div>
+                <p class="title"> Wmns Air Force 1 '07 Vd Nike </p>
+                <a href="" data-id="4" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla3.webp" alt="">
+                    <p><span>700</span>S/.</p>
+                </div>
+                <p class="title"> Nike air max 97 by Lil Nas X</p>
+                <a href="" data-id="5" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla4-1-2.jfif" alt="">
+                    <p><span>450</span>S/.</p>
+                </div>
+                <p class="title"> Zapatillas Urbanas Hombre Court</p>
+                <a href="" data-id="6" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla4.webp" alt="">
+                    <p><span>500</span>S/.</p>
+                </div>
+                <p class="title"> Nike Air Force edicion Chucky</p>
+                <a href="" data-id="7" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla5-1-2.jfif" alt="">
+                    <p><span>310</span>S/.</p>
+                </div>
+                <p class="title"> Zapatillas Training Hombre Nike Legend</p>
+                <a href="" data-id="8" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla5.png" alt="">
+                    <p><span>870</span>S/.</p>
+                </div>
+                <p class="title">Gucci Nike Air Force 1 </p>
+                <a href="" data-id="9" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla6.jpg" alt="">
+                    <p><span>330</span>S/.</p>
+                </div>
+                <p class="title">Nike Kyrie 5 GS SBSP Spongebob</p>
+                <a href="" data-id="10" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla7.jfif" alt="">
+                    <p><span>310</span>S/.</p>
+                </div>
+                <p class="title"> Zapatillas Urbanas Mujer Nike Court</p>
+                <a href="" data-id="11" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./img/zapatilla8.jfif" alt="">
+                    <p><span>310</span>S/.</p>
+                </div>
+                <p class="title"> Zapatillas Urbanas Hombre Nike Venture Runner</p>
+                <a href="" data-id="11" class="btn-add-cart">añadir al carrito</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function showCart(x) {
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn() {
+            document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./js/productos.js"></script>
+</body>
+
+</html>
